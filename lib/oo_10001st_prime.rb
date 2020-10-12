@@ -9,7 +9,7 @@ class Prime
   
   def is_prime?(number)
     return false if number.zero? || number == 1
-    integers *= (2..Math.sqrt(number).round)
+    integers =* (2..Math.sqrt(number).round)
     integers.each{|i| return false if number % i == 0}
     true
   end 
