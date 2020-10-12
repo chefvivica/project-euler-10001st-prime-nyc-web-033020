@@ -1,10 +1,10 @@
 # Implement your procedural solution here!
-# def is_prime?(n)
-#   return false if n.zero? || n == 1 
-#   integers =* (2..Math.sqrt(n).round)
-#   integers.each{|i| return false  if (n % i).zero?}
-#   true
-# end 
+def is_prime?(n)
+  return false if n.zero? || n == 1 
+  integers =* (2..Math.sqrt(n).round)
+  integers.each{|i| return false  if (n % i).zero?}
+  true
+end 
 
 # def prime_number_for(nth_element)
 #   count = 0 
@@ -14,12 +14,12 @@
 #   end 
 #   number
 # end 
-def is_prime?(number)
-  return false if number.zero? || number == 1
-  integers =* (2..Math.sqrt(number).round)
-  integers.each {|i| return false if (number % i).zero?}
-  true
-end
+# def is_prime?(number)
+#   return false if number.zero? || number == 1
+#   integers =* (2..Math.sqrt(number).round)
+#   integers.each {|i| return false if (number % i).zero?}
+#   true
+# end
 
 def prime_number_for(nth_element)
   count = 0
