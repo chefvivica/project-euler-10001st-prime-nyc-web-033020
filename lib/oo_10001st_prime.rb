@@ -1,6 +1,6 @@
 # Implement your object-oriented solution here!
 class Prime 
-  attr_accessor :number, nth_element
+  attr_accessor :number, :nth_element
   
   def initialize(nth_element)
     @nth_element = nth_element
